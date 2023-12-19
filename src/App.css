@@ -154,7 +154,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 80px;
   background: var(--white);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -743,9 +743,12 @@ input[type="checkbox"] {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 780px) {
   .hero--section {
     padding: 3rem 0;
+  }
+  .navbar {
+    padding: 15px 50px;
   }
 }
 /* Responsive Screens Ends*/

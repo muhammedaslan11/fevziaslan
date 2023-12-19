@@ -9,7 +9,7 @@ export default function HeroSection() {
           <div className="hero--section--content">
             <p className="section--title">
               <TypeAnimation
-                sequence={["Merhaba, Ben Fevzi", 700, "", 700]}
+                sequence={["Merhaba, Ben Fevzi Aslan", 700, "", 700]}
                 repeat={Infinity}
               />
             </p>
@@ -22,7 +22,12 @@ export default function HeroSection() {
               <br /> Biz Onları Hayata Geçirelim...
             </p>
           </div>
-          <button className="btn btn-primary">İletişime Geç</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => window.open("https://wa.me/+905444038307")}
+          >
+            İletişime Geç
+          </button>
         </div>
         <div className="hero--section--img">
           <img src="./img/fevz.png" alt="Hero Section" />
