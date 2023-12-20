@@ -2,79 +2,44 @@ import { Link } from "react-scroll";
 import React from "react";
 
 function Footer() {
+  const links = [
+    {
+      to: "heroSection",
+      name: "Home",
+    },
+    {
+      to: "AboutMe",
+      name: "About Me",
+    },
+    {
+      to: "footer",
+      name: "Footer",
+    },
+  ];
+
   return (
-    <footer className="footer--container">
+    <footer id="footer" className="footer--container">
       <div className="footer--link--container">
-        <div>
-          <img src="./img/logo2.png" alt="Logoipsum" />
-        </div>
+        <a href="/">
+          <img src="./img/logo2.png" alt="Logoipsum" className="logo" />
+        </a>
         <div className="footer--items">
           <ul>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="heroSection"
-                className="text-md"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="MyPortfolio"
-                className="text-md"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="AboutMe"
-                className="text-md"
-              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Contact"
-                className="text-md"
-              >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="testimonial"
-                className="text-md"
-              >
-                Testimonials
-              </Link>
-            </li>
+            {links.map((item, index) => (
+              <li key={index}>
+                <Link
+                  activeClass="navbar--active-content"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  to={item.to}
+                  className="text-md cursor-pointer"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="footer--social--icon">
@@ -172,53 +137,19 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
+        <div className="copyright">
+          <p>
+            &copy; {new Date().getFullYear()}{" "}
+            <a href="https://fevziaslan.vercel.app/">
+              <strong>Fevzi Aslan</strong>
+            </a>{" "}
+            Tüm Hakları Saklıdır.
+          </p>
+        </div>
         <p className="footer--content">
           Made with 💖 by{" "}
           <a href="https://muhammed-aslan11.vercel.app/">Muhammed aslan</a>
         </p>
-        <div className="footer--social--icon">
-          <ul>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Privacy_Policy"
-                className="text-sm"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Terms_of_Service"
-                className="text-sm"
-              >
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Cookies_Settings"
-                className="text-sm"
-              >
-                Cookies Settings
-              </Link>
-            </li>
-          </ul>
-        </div>
       </div>
     </footer>
   );
