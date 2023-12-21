@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function HeroSection() {
   return (
     <>
-      <div style={{ width: "100%", height: "73px", backgroundColor: "red" }} />
+      <div style={{ width: "100%", height: "73px", backgroundColor: "#fff" }} />
       <section id="heroSection" className="hero--section">
         <div className="hero--section--content--box">
           <div className="hero--section--content">

@@ -12,10 +12,6 @@ function Navbar() {
       to: "AboutMe",
       name: "About Me",
     },
-    {
-      to: "footer",
-      name: "Footer",
-    },
   ];
   localStorage.setItem("links", links);
   const toggleNav = () => {
