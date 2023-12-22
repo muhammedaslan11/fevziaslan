@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import React from "react";
 
+function Footer() {
   return (
     <footer id="footer" className="footer--container">
       <div className="footer--link--container">
