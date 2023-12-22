@@ -2,7 +2,10 @@ export default function Experience() {
   return (
     <section id="Experience" className="experience--section">
       <div className="experience--section--img">
-        <img src="./img/construction.jpg" alt="" />
+        <img
+          src="https://www.constructafrica.com/sites/default/files/inline-images/Construction%20Planning.jpg"
+          alt=""
+        />
       </div>
       <div className="hero--section--content--box experience--section--box">
         <div className="hero--section--content">
