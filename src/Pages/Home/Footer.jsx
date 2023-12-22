@@ -1,22 +1,6 @@
 import { Link } from "react-scroll";
 import React from "react";
 
-function Footer() {
-  const links = [
-    {
-      to: "heroSection",
-      name: "Home",
-    },
-    {
-      to: "AboutMe",
-      name: "About Me",
-    },
-    {
-      to: "Experience",
-      name: "Experience",
-    },
-  ];
-
   return (
     <footer id="footer" className="footer--container">
       <div className="footer--link--container">

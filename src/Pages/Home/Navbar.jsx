@@ -6,15 +6,15 @@ function Navbar() {
   const links = [
     {
       to: "heroSection",
-      name: "Home",
+      name: "Ana Sayfa",
     },
     {
       to: "AboutMe",
-      name: "About Me",
+      name: "Hakkımda",
     },
     {
       to: "Experience",
-      name: "Experience",
+      name: "Projeler",
     },
   ];
   localStorage.setItem("links", links);
