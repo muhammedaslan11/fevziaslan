@@ -1,5 +1,6 @@
 import Footer from "../Footer";
 import HeroSection from "../HeroSection";
+import Experience from "../Experience";
 import AboutMe from "../AboutMe";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutMe />
+      <Experience />
       <Footer />
     </>
   );

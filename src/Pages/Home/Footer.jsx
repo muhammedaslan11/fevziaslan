@@ -11,6 +11,10 @@ function Footer() {
       to: "AboutMe",
       name: "About Me",
     },
+    {
+      to: "Experience",
+      name: "Experience",
+    },
   ];
 
   return (

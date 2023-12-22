@@ -218,18 +218,66 @@ h3 {
 /* Hero Section Style Ends */
 
 /* About Us */
-.about--section {
+.experience--section {
   display: grid;
   padding: 5rem;
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
 }
-.about--section--img > img {
+.experience--section--img > img {
   width: 100%;
   height: 100%;
 }
+td {
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 /* About Us Ends */
+/* Experience Starts */
+// scss
+.about--section {
+  padding: 5rem;
+  overflow: hidden;
+  text-align: center;
+  h1 {
+    margin-bottom: 3rem;
+  }
+  &-container {
+    display: flex;
+    gap: 4rem;
+    &-left {
+      display: flex;
+      width: 400px;
+      height: 400px;
+      margin: auto 0;
+      img {
+        border-radius: 2rem;
+      }
+    }
+    &-right {
+      width: 100%;
+      &-boxes {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+        .experience-box {
+          width: 100%;
+          border: 1px solid;
+          border-radius: 2rem;
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+/* Experience Ends */
 
 /* Footer Start     */
 .footer--container {
@@ -240,6 +288,7 @@ h3 {
   background: var(--bg-shade);
   align-items: center;
   align-self: stretch;
+  margin-top: 3rem;
 }
 .footer--link--container {
   display: flex;
@@ -329,19 +378,6 @@ h3 {
 }
 
 @media only screen and (max-width: 1600px) {
-}
-
-@media only screen and (max-width: 1200px) {
-  .btn-outline-primary {
-    display: none;
-  }
-  .about--section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }
 @media only screen and (max-width: 1000px) {
   .hero--section {
@@ -445,12 +481,33 @@ h3 {
   .nav__hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
+  .btn-outline-primary {
+    display: none;
+  }
+  .experience--section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .about--section {
+    height: fit-content;
+    &-container {
+      display: block;
+      &-left {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+      }
+    }
+  }
 }
 @media screen and (max-width: 780px) {
   .hero--section {
     padding: 3rem 0;
   }
-  .about--section {
+  .experience--section {
     padding: 2rem;
   }
   .navbar {
@@ -470,16 +527,29 @@ h3 {
     font-size: 30px;
   }
   .hero--section-description {
-    font-size: 15px;
+    font-size: 21px;
   }
-  .about--section--img > img {
-    width: 300px;
+  .experience--section--img > img {
+    width: 350px;
   }
   .box {
     padding: 1rem;
   }
   .box img {
     object-fit: contain;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about--section {
+    padding: 3rem 2rem;
+    &-container-right-boxes {
+      overflow: hidden;
+      padding: 2rem;
+      flex-direction: column;
+      .experience-box {
+        width: auto;
+      }
+    }
   }
 }
 /* Responsive Screens Ends*/

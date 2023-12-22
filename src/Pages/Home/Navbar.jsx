@@ -12,6 +12,10 @@ function Navbar() {
       to: "AboutMe",
       name: "About Me",
     },
+    {
+      to: "Experience",
+      name: "Experience",
+    },
   ];
   localStorage.setItem("links", links);
   const toggleNav = () => {
@@ -79,7 +83,7 @@ function Navbar() {
         onClick={() => window.open("https://wa.me/+905444038307")}
         className="btn btn-outline-primary"
       >
-        Contact Me
+        İletişime Geç
       </div>
     </nav>
   );
