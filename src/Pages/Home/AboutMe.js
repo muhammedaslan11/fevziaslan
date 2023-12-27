@@ -1,9 +1,25 @@
 import { FaAward, FaGraduationCap } from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 export default function AboutMe() {
+  const { t, i18n } = useTranslation();
+
+  const experiences = [
+    {
+      company: "Say Mekanik",
+      years: 2,
+    },
+    {
+      company: "Oyak Beton",
+      years: 2,
+    },
+    {
+      company: "Peker İnşaat",
+      years: 1,
+    },
+  ];
   return (
     <section id="AboutMe" className="about--section">
-      <h1 className="herosection--title">Benim Hakkımda</h1>
+      <h1 className="herosection--title">{t("aboutme")}</h1>
       <div className="about--section-container">
         <div className="about--section-container-left">
           <img src="./img/fvzlast.png" alt="" />
@@ -13,34 +29,30 @@ export default function AboutMe() {
             <div className="experience-box">
               <FaAward size={"2.5rem"} />
               <b>
-                <h3>Deneyim</h3>
+                <h3>{t("experience")}</h3>
               </b>
-              <p>Say Mekanik 2+ Yıl</p>
-              <p>Oyak Beton 2+ Yıl</p>
-              <p>Peker İnşaat 1+ Yıl</p>
+              {experiences.map((item, index) => (
+                <p key={index}>
+                  {" "}
+                  {item.company} {item.years}+ {t("year")}
+                </p>
+              ))}
             </div>
             <div className="experience-box">
               <FaGraduationCap size={"2.5rem"} />
               <b>
-                <h3>Eğitim</h3>
+                <h3>{t("education")}</h3>
               </b>
               <b>
-                <p>Karadeniz Teknik Üniversitesi</p>
+                <p>{t("ktu")}</p>
               </b>
               <b>
-                <p>İnşaat Mühendisliği</p>
+                <p>{t("civilEngineering")}</p>
               </b>
             </div>
           </div>
           <div className="desc">
-            <p className="text-md">
-              Her proje bir öyküdür, ben ise her detayda inşa ettiğim hikayenin
-              mimarıyım. Sorumlulukla, tutkuyla ve mükemmeliyetle dokunuşlarımı
-              işlediğim her yapı, geleceğe güvenle taşınan birer eserdir. İnşaat
-              mühendisi olarak, her çizdiğim çizgiyle sadece binalar değil, aynı
-              zamanda hayalleri de yükseltiyorum. Geleceği inşa etmek için
-              buradayım.
-            </p>
+            <p className="text-md">{t("aboutSaying")}</p>
           </div>
         </div>
       </div>

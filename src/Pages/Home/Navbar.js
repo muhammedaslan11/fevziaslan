@@ -1,29 +1,36 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const [modalOpen, setModalOpen] = useState(false);
   const [navActive, setNavActive] = useState(false);
+  const { t, i18n } = useTranslation();
+
   const links = [
     {
       to: "heroSection",
-      name: "Ana Sayfa",
+      name: t("homepageTitle"),
     },
     {
       to: "AboutMe",
-      name: "Hakkımda",
+      name: t("aboutmeTitle"),
     },
     {
-      to: "Experience",
-      name: "Projeler",
+      to: "Projects",
+      name: t("projectsTitle"),
     },
   ];
+
   localStorage.setItem("links", links);
   const toggleNav = () => {
     setNavActive(!navActive);
   };
-
   const closeMenu = () => {
     setNavActive(false);
+  };
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
   };
 
   useEffect(() => {
@@ -46,6 +53,7 @@ function Navbar() {
     }
   }, []);
 
+  // console.log("objectdsdadas", i18n.languages);
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <a href="/">
@@ -79,11 +87,48 @@ function Navbar() {
           ))}
         </ul>
       </div>
-      <div
+
+      {/* <div
         onClick={() => window.open("https://wa.me/+905444038307")}
         className="btn btn-outline-primary"
       >
-        İletişime Geç
+        {t("getContactTitle")}
+      </div> */}
+      <div className="language-parent">
+        <button
+          onClick={() => {
+            setModalOpen(!modalOpen);
+          }}
+        >
+          <b>{i18n.language.toUpperCase()}</b>
+        </button>
+        {modalOpen && (
+          <div className="language-modal">
+            <button
+              onClick={() => {
+                changeLanguage("tr");
+                setModalOpen(false);
+              }}
+            >
+              {" "}
+              {/* <div>
+                <img src="https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TR.svg" />
+              </div> */}
+              Turkish
+            </button>
+            <button
+              onClick={() => {
+                changeLanguage("en");
+                setModalOpen(false);
+              }}
+            >
+              {/* <div>
+                <img src="https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GB.svg" />
+              </div> */}
+              English
+            </button>
+          </div>
+        )}
       </div>
     </nav>
   );

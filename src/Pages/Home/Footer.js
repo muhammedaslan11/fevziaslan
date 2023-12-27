@@ -1,7 +1,9 @@
 import { Link } from "react-scroll";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t, i18n } = useTranslation();
   return (
     <footer id="footer" className="footer--container">
       <div className="footer--link--container">
@@ -133,7 +135,7 @@ function Footer() {
             <a href="https://fevziaslan.vercel.app/">
               <strong>Fevzi Aslan</strong>
             </a>{" "}
-            Tüm Hakları Saklıdır.
+            {t("copyright")}
           </p>
         </div>
         <p className="footer--content">

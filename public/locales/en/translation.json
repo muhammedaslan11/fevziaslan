@@ -1,0 +1,31 @@
+{
+  "welcome": "Welcome!",
+  "homepageTitle": "Home",
+  "aboutmeTitle": "About Me",
+  "projectsTitle": "Projects",
+  "getContactTitle": "Get in Touch",
+
+  "animationTypeText": "Hello, I'm Fevzi Aslan",
+  "titlePart1": "Construction",
+  "titlePart2": "Engineer",
+  "sectionDescPart1": "Present Your Projects to Us",
+  "sectionDescPart2": "We Bring Them to Life...",
+
+  "aboutme": "About Me",
+  "aboutSaying": "Every project is a story, and I am the architect of the story I build in every detail. With responsibility, passion, and excellence, each structure I touch becomes a work confidently carried into the future. As a construction engineer, with every line I draw, I elevate not only buildings but also dreams. I am here to build the future.",
+
+  "projectsThatIwereIn": "Projects I Have Been Involved In",
+
+  "copyright": "All Rights Reserved.",
+
+  "year": "Year",
+  "experience": "Experience",
+  "education": "Education",
+  "ktu": "Karadeniz Technical University",
+  "civilEngineering": "Civil Engineering",
+  "position": "Position",
+  "company": "Company",
+  "proje": "Project",
+  "responsibilities": "Responsibilities",
+  "date": "Date"
+}

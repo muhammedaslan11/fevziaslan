@@ -1,0 +1,35 @@
+[
+  {
+    "position": "Saha Mühendisi",
+    "company": "Anki Garden İş Ortaklığı",
+    "date": "08.06.2021-31.11.2021",
+    "responsibilities": [
+      "Atatürk Kız Öğrenci Yurdu (750 kişilik kız öğrenci yurdu yapım işi projesi)"
+    ]
+  },
+  {
+    "position": "Saha Şefi",
+    "company": "SBC Yapı İnşaat",
+    "date": "08.06.2020-05.01.2021",
+    "responsibilities": ["Metro İnşaatı Keşif ve Metraj Çıkarılması"]
+  },
+  {
+    "position": "İnşaat Mühendisi",
+    "company": "Say Mekanik Proje ve İnşaat Yapı",
+    "date": "09.10.2018-06.05.2020",
+    "responsibilities": [
+      "Şantiye Yönetimi ve Planlaması(Cerrahpaşa Devlet Hastanesi Yenileme ve Tadilat Projesi)",
+      "Hakediş ve Metraj (Çapa Devlet Hastanesi ve Özel Yurt Projesi Autocad Üzerinden İmalat Projelerinin Çizilmesi İşi)"
+    ]
+  },
+  {
+    "position": "Stajyer",
+    "company": "T.C. Bakırköy Fen İşleri Müdürlüğü - İstanbul",
+    "date": "06.06.2015-08.10.2015",
+    "responsibilities": [
+      "İki nokta arasındaki topografik yapıp inceleyerek arazi etüdü yapmak",
+      "Hafriyat ve dolgu alanlarını tespit edip, dolgu hacimlerini hesaplamak",
+      "Yol kenarı drenaj kanalları yapmak"
+    ]
+  }
+]

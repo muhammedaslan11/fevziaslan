@@ -1,0 +1,31 @@
+{
+  "welcome": "Hoşgeldin!",
+  "homepageTitle": "Ana Sayfa",
+  "aboutmeTitle": "Hakkımda",
+  "projectsTitle": "Projeler",
+  "getContactTitle": "İletişime Geç",
+
+  "animationTypeText": "Merhaba, Ben Fevzi Aslan",
+  "titlePart1": "İnşaat",
+  "titlePart2": "Mühendisi",
+  "sectionDescPart1": "Sizlere projelerinizi Bize Sunun",
+  "sectionDescPart2": "Biz Onları Hayata Geçirelim...",
+
+  "aboutme": "Benim Hakkımda",
+  "aboutSaying": "Her proje bir öyküdür, ben ise her detayda inşa ettiğim hikayenin mimarıyım. Sorumlulukla, tutkuyla ve mükemmeliyetle dokunuşlarımı işlediğim her yapı, geleceğe güvenle taşınan birer eserdir. İnşaat mühendisi olarak, her çizdiğim çizgiyle sadece binalar değil, aynı zamanda hayalleri de yükseltiyorum. Geleceği inşa etmek için buradayım.",
+
+  "projectsThatIwereIn": "Yer aldığım projeler",
+
+  "copyright": "Tüm Hakları Saklıdır.",
+
+  "year": "Yıl",
+  "experience": "Deneyim",
+  "education": "Eğitim",
+  "ktu": "Karadeniz Teknik Üniversitesi",
+  "civilEngineering": "İnşaat Mühendisliği",
+  "position": "Pozisyon",
+  "company": "Firma",
+  "proje": "Proje",
+  "responsibilities": "Sorumluluklar",
+  "date": "Tarih"
+}

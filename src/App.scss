@@ -166,6 +166,35 @@ h3 {
 .navbar--active-content {
   color: var(--primary);
 }
+.language-parent {
+  margin-right: 25px;
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
+.language-modal {
+  position: absolute;
+  top: 30px;
+  left: -60px;
+  background-color: lavender;
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  button {
+    height: 50%;
+    background: transparent;
+    font-weight: 800;
+    text-transform: uppercase;
+    img {
+      width: 40px;
+      display: inline;
+    }
+  }
+}
 /* Navbar Styles Ends */
 
 /* Hero Section Style */
@@ -408,7 +437,7 @@ tr:nth-child(even) {
 
   .hero--section--title,
   .sections--heading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
   }
   .hero--section--content--box {
@@ -539,7 +568,7 @@ tr:nth-child(even) {
     object-fit: contain;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 600px) {
   .about--section {
     padding: 3rem 2rem;
     &-container-right-boxes {
