@@ -1,8 +1,10 @@
-import projectsData from "../../data/projects.json";
 import { useTranslation } from "react-i18next";
+import projectsDataTR from "../../data/projects.tr.json";
+import projectsDataEN from "../../data/projects.en.json";
 
 export default function Experience() {
   const { t, i18n } = useTranslation();
+  const data = i18n.language === "tr" ? projectsDataTR : projectsDataEN;
   return (
     <section id="Projects" className="experience--section">
       <div className="experience--section--img">
@@ -26,7 +28,7 @@ export default function Experience() {
               </td>
               <td>{t("date")}</td>
             </tr>
-            {projectsData.map((item, index) => (
+            {data.map((item, index) => (
               <tr key={index}>
                 <td>
                   {item.position} | {item.company}

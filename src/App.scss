@@ -157,9 +157,9 @@ h3 {
 /* Navbar Content */
 .navbar--content {
   color: var(--darkblue);
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   cursor: pointer;
 }
@@ -203,7 +203,7 @@ h3 {
     align-items: center;
     &:hover {
       transform: scale(1.1);
-      background-color: aqua;
+      background-color: rgba(200, 200, 200, 0.5);
       transition: all, 0.2s;
     }
     img {

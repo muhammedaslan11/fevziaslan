@@ -16,7 +16,7 @@ import Backend from "i18next-http-backend";
 // };
 
 i18n.use(initReactI18next).use(Backend).init({
-  lng: "en",
+  lng: "tr",
 });
 
 export default i18n;

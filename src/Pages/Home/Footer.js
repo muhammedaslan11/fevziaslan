@@ -140,8 +140,12 @@ function Footer() {
         </div>
         <p className="footer--content">
           Made with 💖 by{" "}
-          <a href="https://muhammedaslan.vercel.app/" target="_blank">
-            Muhammed aslan
+          <a
+            style={{ fontWeight: "700" }}
+            href="https://muhammedaslan.vercel.app/"
+            target="_blank"
+          >
+            Muhammed Aslan
           </a>
         </p>
       </div>

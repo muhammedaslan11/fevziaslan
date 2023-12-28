@@ -2,13 +2,25 @@ import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
 import React, { useEffect } from "react";
 
+// "animationTypeText": "",
+// "animationTypeText": "",
 export default function HeroSection() {
   const { t, i18n } = useTranslation();
-  const [text, setText] = React.useState(t("animationTypeText"));
+  const [animationTypeText, setAnimationTypeText] = React.useState(
+    "Hello, I'm Fevzi Aslan"
+  );
   useEffect(() => {
-    setText(t("animationTypeText"));
-  }, [t]);
+    setAnimationTypeText("Merhaba, Ben Fevzi Aslan");
+  }, []);
 
+  const Typer = ({ language }) => {
+    const TyperText =
+      language === "tr" ? "Merhaba, Ben Fevzi Aslan" : "Hello, I'm Fevzi Aslan";
+
+    return (
+      <TypeAnimation sequence={[TyperText, 700, "", 700]} repeat={Infinity} />
+    );
+  };
   return (
     <>
       <div style={{ width: "100%", height: "73px", backgroundColor: "#fff" }} />
@@ -16,10 +28,7 @@ export default function HeroSection() {
         <div className="hero--section--content--box">
           <div className="hero--section--content">
             <p className="section--title">
-              <TypeAnimation
-                sequence={[text, 700, "", 700]}
-                repeat={Infinity}
-              />
+              <Typer language={i18n.language} />
             </p>
             <h1 className="hero--section--title">
               <span className="hero--section-title--color">

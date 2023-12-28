@@ -1,0 +1,37 @@
+[
+  {
+    "position": "Site Engineer",
+    "company": "Anki Garden Partnership",
+    "date": "08.06.2021-31.11.2021",
+    "responsibilities": [
+      "Construction project of Atatürk Girls' Student Dormitory (750-person capacity)"
+    ]
+  },
+  {
+    "position": "Site Chief",
+    "company": "SBC Construction",
+    "date": "08.06.2020-05.01.2021",
+    "responsibilities": [
+      "Estimation and Quantity Survey for Metro Construction"
+    ]
+  },
+  {
+    "position": "Construction Engineer",
+    "company": "Say Mechanical Project and Construction Building",
+    "date": "09.10.2018-06.05.2020",
+    "responsibilities": [
+      "Site Management and Planning (Renovation and Retrofitting Project of Cerrahpaşa State Hospital)",
+      "Progress Payment and Quantity Survey (Drawing Manufacturing Projects for Çapa State Hospital and Private Dormitory on Autocad)"
+    ]
+  },
+  {
+    "position": "Intern",
+    "company": "Municipality of Bakırköy Directorate of Civil Works - Istanbul",
+    "date": "06.06.2015-08.10.2015",
+    "responsibilities": [
+      "Conducting topographic studies by examining the terrain between two points",
+      "Identifying excavation and fill areas and calculating fill volumes",
+      "Constructing roadside drainage channels"
+    ]
+  }
+]
