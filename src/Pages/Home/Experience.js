@@ -17,10 +17,12 @@ export default function Experience() {
           <table border="1" bordercolor="black" bgcolor="white">
             <tr>
               <td>
-                {t("position")}/{t("company")}
+                {t("position")}/{window.innerWidth < 780 && <br />}{" "}
+                {t("company")}
               </td>
               <td>
-                {t("proje")}/{t("responsibilities")}
+                {/* {t("proje")} */}
+                {t("responsibilities")}
               </td>
               <td>{t("date")}</td>
             </tr>

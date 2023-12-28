@@ -48,7 +48,7 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (window.innerWidth <= 1200) {
+    if (window.innerWidth <= 900) {
       closeMenu;
     }
   }, []);
@@ -95,13 +95,15 @@ function Navbar() {
         {t("getContactTitle")}
       </div> */}
       <div className="language-parent">
-        <button
+        <div
+          className="lang-btn"
           onClick={() => {
             setModalOpen(!modalOpen);
           }}
         >
-          <b>{i18n.language.toUpperCase()}</b>
-        </button>
+          <img src={t("flag")} />
+          <b>{i18n.language === "tr" ? "Turkish" : "English"}</b>
+        </div>
         {modalOpen && (
           <div className="language-modal">
             <button
@@ -111,9 +113,9 @@ function Navbar() {
               }}
             >
               {" "}
-              {/* <div>
+              <div>
                 <img src="https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TR.svg" />
-              </div> */}
+              </div>
               Turkish
             </button>
             <button
@@ -122,9 +124,9 @@ function Navbar() {
                 setModalOpen(false);
               }}
             >
-              {/* <div>
+              <div>
                 <img src="https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GB.svg" />
-              </div> */}
+              </div>
               English
             </button>
           </div>

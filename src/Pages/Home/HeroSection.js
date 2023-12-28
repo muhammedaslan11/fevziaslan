@@ -1,8 +1,14 @@
 import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
+import React, { useEffect } from "react";
 
 export default function HeroSection() {
   const { t, i18n } = useTranslation();
+  const [text, setText] = React.useState(t("animationTypeText"));
+  useEffect(() => {
+    setText(t("animationTypeText"));
+  }, [t]);
+
   return (
     <>
       <div style={{ width: "100%", height: "73px", backgroundColor: "#fff" }} />
@@ -11,7 +17,7 @@ export default function HeroSection() {
           <div className="hero--section--content">
             <p className="section--title">
               <TypeAnimation
-                sequence={[t("animationTypeText"), 700, "", 700]}
+                sequence={[text, 700, "", 700]}
                 repeat={Infinity}
               />
             </p>
