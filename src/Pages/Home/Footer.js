@@ -142,7 +142,7 @@ function Footer() {
           Made with 💖 by{" "}
           <a
             style={{ fontWeight: "700" }}
-            href="https://muhammedaslan.com.tr/"
+            href="https://www.muhammedaslan.com.tr/"
             target="_blank"
           >
             Muhammed Aslan
