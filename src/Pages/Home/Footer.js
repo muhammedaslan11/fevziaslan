@@ -132,7 +132,7 @@ function Footer() {
         <div className="copyright">
           <p>
             &copy; {new Date().getFullYear()}{" "}
-            <a href="https://fevziaslan.vercel.app/">
+            <a href="https://www.fevziaslan.com.tr/">
               <strong>Fevzi Aslan</strong>
             </a>{" "}
             {t("copyright")}
@@ -142,7 +142,7 @@ function Footer() {
           Made with 💖 by{" "}
           <a
             style={{ fontWeight: "700" }}
-            href="https://muhammedaslan.vercel.app/"
+            href="https://muhammedaslan.com.tr/"
             target="_blank"
           >
             Muhammed Aslan
