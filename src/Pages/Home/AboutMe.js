@@ -22,7 +22,7 @@ export default function AboutMe() {
       <h1 className="herosection--title">{t("aboutme")}</h1>
       <div className="about--section-container">
         <div className="about--section-container-left">
-          <img src="./img/fvzlast.png" alt="" />
+          <img src="./img/fevzi-small.png" alt="" />
         </div>
         <div className="about--section-container-right">
           <div className="about--section-container-right-boxes">

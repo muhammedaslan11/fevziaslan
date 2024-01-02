@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer--link--container">
         <div className="footer-left-part">
           <a href="/">
-            <img src="./img/logo2.png" alt="Logoipsum" className="logo" />
+            <img src="./img/fevzi-logo.png" alt="Logoipsum" className="logo" />
           </a>
           <div className="footer--social--icon">
             <ul>
@@ -105,7 +105,7 @@ function Footer() {
           </div>
         </div>
         <div className="box">
-          <img src="./img/sdad.png" alt="" />
+          <img src="./img/fevzi-footer-image.png" alt="" />
         </div>
         {/* <div className="footer--items">
           <ul>

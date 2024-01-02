@@ -50,7 +50,7 @@ export default function HeroSection() {
           </button>
         </div>
         <div className="hero--section--img">
-          <img src="./img/fevz.png" alt="Hero Section" />
+          <img src="./img/fevzi-banner.png" alt="Hero Section" />
         </div>
       </section>
     </>
