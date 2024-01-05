@@ -139,7 +139,7 @@ function Footer() {
           </p>
         </div>
         <p className="footer--content">
-          Made with 💖 by{" "}
+          Made by{" "}
           <a
             style={{ fontWeight: "700" }}
             href="https://www.muhammedaslan.com.tr/"
