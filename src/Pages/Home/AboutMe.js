@@ -20,6 +20,14 @@ export default function AboutMe() {
   return (
     <section id="AboutMe" className="about--section">
       <h1 className="herosection--title">{t("aboutme")}</h1>
+      <a
+        className="btn btn-primary"
+        style={{ marginBottom: "10px" }}
+        target="_blank"
+        href="https://www.fevziaslan.com.tr/Fevzi-Aslan-CV.pdf"
+      >
+        {t("cvView")}
+      </a>
       <div className="about--section-container">
         <div className="about--section-container-left">
           <img src="./img/fevzi-small.png" alt="" />
